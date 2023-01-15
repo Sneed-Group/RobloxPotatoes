@@ -7,7 +7,8 @@ import cv2
 import math
 import time
 
-detector = hub.load("https://tfhub.dev/tensorflow/centernet/resnet50v1_fpn_512x512/1")
+dirname = os.path.dirname(__file__)
+detector = tf.saved_model.load(dirname)
 size_scale = 3
 
 while True:
