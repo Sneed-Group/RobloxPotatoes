@@ -13,7 +13,7 @@ size_scale = 3
 
 while True:
     # Get rect of Window
-    hwnd = win32gui.FindWindow(None, 'Counter-Strike: Global Offensive')
+    hwnd = win32gui.FindWindow(None, 'Roblox')
     #hwnd = win32gui.FindWindow("UnrealWindow", None) # Fortnite
     rect = win32gui.GetWindowRect(hwnd)
     region = rect[0], rect[1], rect[2] - rect[0], rect[3] - rect[1]
