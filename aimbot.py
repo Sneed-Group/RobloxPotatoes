@@ -6,6 +6,7 @@ import win32api, win32con, win32gui
 import cv2
 import math
 import time
+import os
 
 dirname = os.path.dirname(__file__)
 detector = tf.saved_model.load(dirname)
